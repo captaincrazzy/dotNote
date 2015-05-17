@@ -39,24 +39,39 @@ body {
 }
 
 button, .button {
-    border: none;
+
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border: 5px solid #879097;
     outline: none;
-    background: $green;
-    padding: 1rem 3.5rem;
-    border-radius: 2rem;
+    padding: 1rem 1.8rem;
+    border-radius: 0.2rem;
     a {
-        color: white;
+        color: #879097;
         text-decoration: none;
+    }
+    &:hover {
+        border: 5px solid $dark_blue;
+         color: $dark_blue;
     }
 }
 
 .button {
-    color: white;
+    color: #879097;
     margin: 2rem 0;
+    &:hover {
+        border: 5px solid $dark_blue;
+         color: $dark_blue;
+    }
+
+    
 }
 
 a {
-    color: $green;
+    color: #879097;
     text-decoration: none;
     &:hover {
         color: $dark_blue;
@@ -112,15 +127,18 @@ footer {
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
     width: 100%;
-    margin-bottom: 1rem;
-    border: 1px solid $light_gray;
-    border-radius: .4rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid $light_gray;
+    border-radius: 3rem;
 }
 
 input[type="text"], input[type="email"], input[type="password"] {
+    margin-top: 5px;
+    margin-left: -17px;
     height: 40px;
 }
 
 textarea {
+    margin: 10px;
     min-height: 200px;
 }

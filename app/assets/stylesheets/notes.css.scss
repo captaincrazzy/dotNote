@@ -33,17 +33,19 @@
         border-bottom: 1px solid #E9E9E9;
     }
     p {
-        font-size: 1.375rem;
+        font-size: 1rem;
         line-height: 1.75;
+        color: #555;
     }
     .buttons {
         margin-top: 3rem;
         a.button {
+            margin-right: 15px;
             padding: .5rem 2rem;
-            border-radius: 2rem;
+            border-radius: .2rem;
             text-decoration: none;
-            color: $green;
-            border: 5px solid #E9E9E9;
+            color: $dark_blue;
+            border: 5px solid #999;
             @include bold_font;
             background: transparent;
         }
