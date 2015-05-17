@@ -6,3 +6,34 @@
 @import 'global.css.scss';
 @import 'notes.css.scss';
 @import 'welcome.css.scss';
+
+.notification_wrapper_alert { 
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgba(246, 91 , 92, 0.85);
+    margin: 0 0;
+    }
+
+.notification_wrapper_notice { 
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgba( 57, 209, 180, 0.85);
+    margin: 0 0;
+    }
+
+.notification_wrapper_notice, .notification_wrapper_alert p {
+    
+    margin: 0 0;
+    color: #FFFFFF;
+}    
+.alert, .notice {
+    margin: 0;
+    padding: 1.5rem 0;
+    text-align: center;             
+}
+
+
