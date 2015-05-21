@@ -1,6 +1,15 @@
+$dark_blue: #204156;
+$light_gray: #23726D;
+$green: #879097;
+
+@mixin bold_font {
+    font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 #notes {
     .note {
-        background: $dark_blue;
+        background: #4D5B72;
         width: 30%;
         min-height: 150px;
         margin: 1rem 1%;

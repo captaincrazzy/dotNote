@@ -1,8 +1,10 @@
+
 #banner
     .banner_content
         %h1 dotNote
         %p Your online NoteBook. Never forget an idea again.
-        %button= link_to "Sign Up", new_user_registration_path
+        %a.action-btn.animate.center-block.yellow{:href => new_user_registration_path} Sign Up
+        %a.action-btn.animate.center-block.blue{:href => new_user_session_path} Log In
 
 #testimonial
     .wrapper
@@ -29,7 +31,7 @@
     .wrapper
         %h2 Share your Ideas!      
         %p Its <strong>Free</strong> and always will be<strong>...</strong>
-        %button= link_to "Sign Up", new_user_registration_path
+        %a.action-btn.animate.center-block.yellow{:href => new_user_registration_path} Sign Up
 
 %footer
     %p &copy; <strong>.</strong>Note 2015      

@@ -1,7 +1,6 @@
-!!!
+!!! 5
 %html
 %head
-    
     %title dotNote | Your Online Notebook
     = favicon_link_tag 'favicon.ico'
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true 
@@ -9,21 +8,39 @@
     %link{:rel=> "stylesheet", :href=> "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"}
     = csrf_meta_tags
 %body
-    %header
-        .header_inner
-            =link_to image_tag('logo.svg'), root_path, id: "logo"
-            %nav
+    %nav.navbar.navbar-inverse{:role => "navigation"}
+        .container-fluid
+            .navbar-header
+                %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+                    %span.sr-only Toggle navigation
+                    %span.icon-bar
+                    %span.icon-bar
+                    %span.icon-bar
+                %a.navbar-brand{:href => root_path} .Note
+            #bs-example-navbar-collapse-1.collapse.navbar-collapse
                 - if user_signed_in?
-                    =link_to "New Note", new_note_path
-                    =link_to "Sign Out", destroy_user_session_path, method: :delete
+                    %ul.nav.navbar-nav.navbar-right
+                        %li
+                            %a{:href => new_note_path} New Note
+                        %li
+                            %a{:href => edit_user_registration_path} Account
+                        %li= link_to "Sign Out", destroy_user_session_path, method: :delete
+                            
                 - else
-                    =link_to "Log In", new_user_session_path       
-    -if notice
-        %div.notification_wrapper_notice
-            %p.notice= notice     
-    -elsif alert
-        %div.notification_wrapper_alert
-            %p.alert= alert        
+                    %ul.nav.navbar-nav.navbar-right
+                        %li
+                            %a{:href => new_user_session_path} Log In
+                        %li
+                            %a{:href => new_user_registration_path} Sign Up     
+            
+            .container   
+            
+        - if notice
+            %div.notification_wrapper_notice
+                %p.notice= notice     
+        - elsif alert
+            %div.notification_wrapper_alert
+                %p.alert= alert         
 
 
     =yield     

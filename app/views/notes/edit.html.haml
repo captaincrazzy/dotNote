@@ -1,6 +1,11 @@
-.wrapper_with_padding
-    %h1 Edit Your Note
 
-    = render 'form'
-
-    =link_to "Cancel", note_path
+#edit_page.col-md-8.col-md-offset-2
+    .row
+        .panel.panel-default-custom
+            .panel-heading
+                %h1 Edit Your Note
+            .panel-body
+                = render 'form' 
+                %button.btn.btn-danger
+                    =link_to "Cancel", note_path
+        
