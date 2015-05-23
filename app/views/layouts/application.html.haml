@@ -7,12 +7,13 @@
     = favicon_link_tag 'favicon.ico'
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true 
     = javascript_include_tag 'application', 'data-turbolinks-track' => true 
-    %meta(name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0")
-    %meta{:name => "apple-mobile-web-app-capable", :content => "yes"}
-    %link{:rel => "apple-touch-icon", :href => "/assets/touch-icon-iphone.png", :type => "image/png"}/
-    /*%link{:href => "touch-icon-ipad.png", :rel => "apple-touch-icon", :sizes => "76x76"}/*/
-    %link{:rel => "apple-touch-icon", :sizes => "120x120", :href => "/assets/touch-icon-iphone-retina.png", :type => "image/png"}/
-    %link{:rel => "apple-touch-icon", :sizes => "152x152", :href => "/assets/touch-icon-ipad-retina.png", :type => "image/png"}/
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0", :name => "viewport"}/
+    %meta{:content => "initial-scale=1, maximum-scale=1.0, minimum-scale=1.0", :media => "(device-height: 568px)", :name => "viewport"}/
+    %meta{:content => "yes", :name => "apple-mobile-web-app-capable"}/
+    %link{:href => "/touch-icon-iphone.png", :rel => "apple-touch-icon"}/
+    %link{:href => "/touch-icon-ipad.png", :rel => "apple-touch-icon", :sizes => "76x76"}/
+    %link{:href => "/touch-icon-iphone-retina.png", :rel => "apple-touch-icon", :sizes => "120x120"}/
+    %link{:href => "/touch-icon-ipad-retina.png", :rel => "apple-touch-icon", :sizes => "152x152"}/
     %link{:rel=> "stylesheet", :href=> "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"}
     = csrf_meta_tags
 %body
