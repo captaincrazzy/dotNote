@@ -11,8 +11,17 @@
 @import "bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Dosis:800);
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
 
+.btn-warning a{ 
+   color: white;
+   text-decoration: none; 
+}
+
+.btnshow {
+    margin-right: .3rem;
+}
 
 .center-block {
   display: block;
@@ -71,23 +80,74 @@
 }
 
 .panel.panel-default-custom {
+    width: 450px;
     border: none;
-    margin: 12rem;
-    padding: 0 10%;    
+    margin: 12rem auto;
+    padding: 0 0;    
 }
 
 .show-body{
     height: 100%;
     background-color: #76C2AF;
 }
-@media screen and (max-width: 768px) {
-.panel.panel-default-custom { margin: 0 0; margin-top: 7rem; padding: 10%;}
+
+#notes .note_new{
+    width: 30%;
+    min-height: 150px;
+    margin: 1rem 1%;
+    padding: 1.5rem 2.5%;
+    float: left;
+    border-radius: .4rem;
+    position: relative;
+    color: #333;
+    font-size: 4rem;
+    background-color: #e5fcf5;
 }
+
+
+#notes .note_new .title{
+  font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+#notes .note_new .fa{
+    font-size: 4rem;
+}
+
+#notes .note_new .title:hover{
+    color: #fff;
+}
+
+#notes .note_new:hover{
+    background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+#notes .note{font-size: 2rem; width: 100%; display: block; margin: .6rem auto;}
+#notes .note_new .fa{font-size: 4rem; padding-bottom: 1rem;}
+#notes .note_new{font-size: 2rem; width: 100%; display: block; margin: .6rem auto;}
+#notes .note_new .title{font-size: 2rem; width: 100%;}
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+.panel.panel-default-custom { margin: 0 auto; margin-top: 7rem; padding: 0; width: 90%}
+}
+
 .form-group-up{
-    background-color: white;
+    display: block;
+    background-color: #dcecf7;
     text-align: left;
-    padding: 10rem 35rem;
-    margin: 0;
+    width: 500px;
+    padding: 10rem 10rem;
+    margin: 0 auto;
+    border-radius: 5px;
 }
 @media screen and (max-width: 768px) {
 .form-group-up { padding: 10rem 10%;
@@ -117,6 +177,28 @@
     margin: 0 0;
     color: #FFFFFF;
 }    
+
+.footer-imprint {
+    margin-top: 24px;
+    background-color: #333;
+}
+
+.btnlog {
+    float: left;
+    display: block;
+    margin-right: 2rem;
+}
+.btnlog1 {
+    margin-top: 1.3rem;
+}
+.footer p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 2rem auto;
+    color: #fff;
+    text-align: center;
+}
 .alert, .notice {
     margin: 0;
     padding: 1.5rem 0;
@@ -140,4 +222,8 @@
 
 .wrapper_with_padding{
     margin-top: 10rem;
+}
+
+textarea.form-control {
+  height: 200px;
 }

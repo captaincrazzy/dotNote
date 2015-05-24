@@ -1,5 +1,5 @@
 <body style="height: 100%; background-color: #F2CF66;">
-<div class="form-group-up">
+<div class="form-group-up" style="background-color: #fcf2d6">
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
@@ -24,7 +24,8 @@
 
 <h3>Cancel my account</h3>
 
-<p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+<p>Unhappy?</p>
+<%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %><br>
 
 <%= link_to "Back", :back %>
 </div>

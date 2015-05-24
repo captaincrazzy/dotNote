@@ -3,12 +3,9 @@
         .wrapper_with_padding
             #note_show
                 %h1.title= @note.title
+                %a.btn.btn-warning.btnshow{:href => edit_note_path(@note)} Edit
+                %a.btn.btn-danger.btnshow{:href => note_path(@note), method: :delete, data: {confirm: "Are You Sure?"}} Delete
                 %p= simple_format (@note.content)
-
-                .buttons
-                %button.btn.btn-default
-                    =link_to "Edit", edit_note_path(@note)
-                %button.btn.btn-danger    
-                    =link_to "Delete", note_path(@note), method: :delete, data: {confirm: "Are You Sure?"}
+                
                     
                   
