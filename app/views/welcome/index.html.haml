@@ -1,16 +1,27 @@
 
-#banner
-    .banner_content
-        %h1 dotNote
-        %p Your online NoteBook. Never forget an idea again.
-        %a.action-btn.animate.center-block.yellow{:href => new_user_registration_path} Sign Up
-        %a.action-btn.animate.center-block.blue{:href => new_user_session_path} Log In
-
-#testimonial
-    .wrapper
-        %p.quote "The Greatest Online NoteBook"
-        %p.name "Sahil Khanna"
-
+.banner-red.banner-exact
+    .container
+        .row
+            .col-md-12
+        .row
+            .col-md-12
+                .banner-btns.center-block
+                    %h1.text-center dotNote
+        .row
+            .col-md-8.col-md-offset-2
+                %p.climb.text-center Your online NoteBook. Never forgget an idea again
+        .row
+            .banner-btns-log
+                %a.action-btn.animate.center-block.yellow{:href => new_user_registration_path} Sign Up
+                %a.action-btn.animate.center-block.blue{:href => new_user_session_path} Log In    
+.ban-mid
+    .container
+        .row.same-height-parent
+            .col-md-12
+                .panel.same-height{:style => "height: 308px;"}
+                    .panel-heading
+                        %h1.panel-title One Workspace, Many Ideas
+                        %i.fa.fa-file-text-o
 #callouts
     .callout_inner
         .wrapper
