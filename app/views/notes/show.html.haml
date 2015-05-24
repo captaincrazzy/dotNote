@@ -3,6 +3,8 @@
         .wrapper_with_padding
             #note_show
                 %h1.title= @note.title
+                %p.date=@note.created_at.strftime("%d %b, %Y")
+                %a.credits{:href => edit_user_registration_path(@note)}= @note.user.name
                 %a.btn.btn-warning.btnshow{:href => edit_note_path(@note)} Edit
                 %a.btn.btn-danger.btnshow{:href => note_path(@note), method: :delete, data: {confirm: "Are You Sure?"}} Delete
                 %p= simple_format (@note.content)

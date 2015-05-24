@@ -37,9 +37,8 @@ $green: #879097;
     .title {
         @include bold_font;
         font-size: 3rem;
-        margin-bottom: 1.25rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid #E9E9E9;
+        margin: 0;
+        
     }
     p {
         font-family: 'Lato', sans-serif;    
@@ -47,6 +46,13 @@ $green: #879097;
         line-height: 1.75;
         color: #555;
     }
+    .credits{
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0rem;
+        border-bottom: 1px solid #E9E9E9;
+    }
+    
     .buttons {
         margin-top: 3rem;
         a.button {
