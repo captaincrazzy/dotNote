@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<html>(lang="en")
+<html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1/">
+  
   <title>dotNote</title>
-  <%= favicon_link_tag 'favicon.ico' %>
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true  %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0"/>
-  <meta name="viewport" media="(device-height: 568px)" content="initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1.0, minimum-scale=1.0" media="(device-height: 568px)"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+  <meta name="description" content="You online NoteBook. Never forget an idea again">
+  <meta name="keywords" content="education, platform, smart phone, tablet, mobile, social, inclusive, HTML5, classroom, engagement, play, game, fun, quiz, multi-player, pedagogy, learning model, learn, gamification, notebook, notes, online." />
+  
+  <link rel="shortcut icon" href="assets/favicon.ico">
   <link rel="apple-touch-icon-precomposed" href="/assets/touch-icon-iphone.png"/>
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/touch-icon-ipad.png"/>
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/touch-icon-iphone-retina.png"/>
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/touch-icon-ipad-retina.png"/>
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
   <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true  %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
+  
+  
+  
 </head>
 <body>
   <nav class="navbar navbar-inverse" role="navigation">
